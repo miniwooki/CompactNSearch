@@ -83,6 +83,11 @@ public:
 		return m_neighbors[point_set][i];
 	}
 
+	size_t original_index(const size_t& index)
+	{
+		return static_cast<size_t>(m_sort_table[index]);
+	}
+
 	/**
 	* Returns the number of points contained in the point set.
 	*/
